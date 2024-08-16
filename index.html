@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiểm tra web hk3</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Đăng kí thực tập tốt nghiệp</h2>
+      <form class="tt-form">
+        <div>
+          <label for="name">Họ và tên:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div>
+          <label for="MSV">Mã Sinh Viên:</label>
+          <input type="text" id="MSV" name="MSV" required />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="phone">Số điện thoại:</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+        <div>
+          <label for="major">Chuyên Ngành:</label>
+          <select name="major" id="major">
+            <option value="">Chọn chuyên ngành</option>
+            <option value="CNPM">Công nghệ phần mềm</option>
+            <option value="MMT">Mạng máy tính</option>
+            <option value="HTTT">Hệ thống thông tin</option>
+            <option value="CNTDH">Công nghệ tin địa học</option>
+            <option value="THKT">Tin học kinh tế</option>
+          </select>
+        </div>
+        <div>
+          <label for="company">Công ty thực tập:</label>
+          <input type="text" id="company" name="company" />
+        </div>
+        <div>
+          <label for="time">Thời gian thực tập (tuần):</label>
+          <input
+            type="number"
+            id="time"
+            name="time"
+            min="12"
+            max="16"
+            required
+          />
+        </div>
+        <div>
+          <label for="note">Ghi chú:</label>
+          <textarea name="note" id="note"></textarea>
+        </div>
+        <div class="error-message"></div>
+        <button>Đăng Kí</button>
+        <div class="success-message"></div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
